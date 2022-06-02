@@ -1,0 +1,205 @@
+body,
+html {
+  height: 100%;
+  font-size: 20px; 
+  font-family: 'Poppins', sans-serif; 
+  line-height: 1.5em; 
+  margin: 0px;
+  color: black; 
+  background-color:white;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {   /*This removes the scrollbar. I mainly put it in for aesthetic reasons, but I don't*/
+  display: none;              /*know if the site will still be accessible if we remove it.*/
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  text-align: center;
+  line-height: 60px;
+}
+
+h2 {
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+p a {
+  color: white;
+  text-decoration: none;
+}
+
+p.attributions a:hover {
+  color: black;
+}
+
+
+li.nav {
+  display: inline;
+  font-size: 15px;
+}
+
+li.nav a {
+  display: inline-block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s;
+} 
+
+li.nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.nav-bar {
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #EDDDD4;
+}
+
+.flex-container {
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: nowrap;
+  justify-content: center; 
+  align-items: center; 
+
+  background-color: gray;
+  padding: 5px;
+
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 30%;
+  bottom: 40%;
+}
+
+.heading-home {
+  padding-left: 4%;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 10px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.intro-text {
+  background-color: white; 
+  padding: 4%;
+  margin: 3%;
+  color: gray; 
+  font-size: 20px; 
+  letter-spacing: 2px; 
+  line-height: 1.4em; 
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-section {
+/*   display: flex; */
+  background-color: white;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 30%;
+  bottom: 30%;
+
+  padding: 20px 20px;
+  margin: 35px;
+  text-align: center;
+  
+  transition: 0.3s;
+}
+
+.text-section:hover,
+.hidden {
+  transform: translate(-30px, -30px);
+	border-color: black;
+  display: block;
+}
+
+.main-message,
+.image-one {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  height: 100%;
+
+/*   background-attachment: fixed; */
+}
+
+.image-one {
+  background-image: url("https://cdn.hpm.io/wp-content/uploads/2018/06/13144848/Immigrant-Detention-Center-AP-1000x667.png");
+  filter: grayscale(100%);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #772E25;
+  background-size: cover;
+  min-height: 100%;
+
+  background-attachment: fixed;
+}
+
+.image-two {
+  background-image: url("https://cms.qz.com/wp-content/uploads/2019/05/naturalization-citizenship-immigration.jpg?quality=75&strip=all&w=1600&h=900&crop=1");
+  filter: grayscale(100%);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #772E25;
+  background-size: cover;
+  min-height: 100%;
+
+  background-attachment: fixed;
+}
+
+.image-three {
+  background-image: url("https://images.freeimages.com/images/large-previews/6e5/immmigration-rally-1437939.jpg");
+  filter: grayscale(100%);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #772E25;
+  background-size: cover;
+  min-height: 100%;
+
+  background-attachment: fixed;
+}
+
+.attributions {
+  font-size: 12px;
+  text-align: right;
+  margin-right: 10px;
+  color: white;
+}
+
+@media screen and (max-width: 700px)  {
+  .flex-container {
+    flex-wrap: wrap;
+    top: 20%;  
+  }
+}
+
+img {
+  border-radius: 25px;
+}
+
+/* TODO: Add additional breakpoints based on your website's design

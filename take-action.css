@@ -1,0 +1,172 @@
+.flex-container-action {
+    display: flex;
+  
+    position: absolute;
+    padding: 0.5em 0;
+    align-items: center;
+  
+    left: 5%;
+    right: 5%;
+  
+    margin: 5% 0;
+    width: 90%;
+  
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  /* Left box under title; item in .flex-container */
+  .action-info-container {
+    width: 100%;
+    margin-right: 5%;
+    margin-left: 0;
+  /*   margin-top: 5%; */
+    margin-bottom: 5%;
+    padding: 35px;
+    font-size: 16px;
+    flex-grow: 2;
+  }
+  
+  .action-info-container img{
+    width: 100%;
+  }
+  
+  .action-info-container p {
+    text-align: left;
+    margin: 5px;
+    border-color: black;
+  }
+  
+  .action-list-container {
+    width: 75%;
+    padding: 35px;
+    margin: 5%;
+    flex-grow: 1;
+  }
+  
+  #checklist {
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-style: solid;
+    border-color: black;
+  }
+  
+  #checklist-header {
+    text-align: center;
+    color: #0D38D3;
+    letter-spacing: 1px;
+  }
+  
+  #instructions {
+    font: 14px "Roboto", sans-serif;
+    text-align: center;
+    font-style: italic;
+    color: gray;
+  }
+  
+  #my-list {
+    padding: 10px 0 0 0;
+    margin: 0;
+    font-size: 10pt;
+  }
+  
+  #my-list li {
+    cursor: pointer;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 8px; 
+    padding-left: 35px;
+    position: relative;
+    list-style-type: none;
+    transition: 0.2s;
+    width: 85%;
+    color: black;
+  }
+  
+  #my-list li::before {
+    content: "";
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    
+    top: 15px;
+    left: 13px;
+    height: 10px;
+    width: 10px;
+  }
+  
+  #my-list li:hover {
+    background: #f3f3f3;
+    color: black;
+  }
+  
+  #my-list li:hover::before {
+    border-color: black;
+    border-style: solid;
+  }
+  
+  #my-list li.all-done {
+    text-decoration: line-through;
+  }
+  
+  #my-list li.all-done::before {
+    content: "";
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 5px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+  
+    .flex-container-action {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media only screen and (min-width: 701px) {
+    
+    .flex-container-action {
+      flex-wrap: wrap;
+    }
+  
+    .left-container {
+      width: 50%;
+      margin-right: 10%;
+    }
+  }
+  
+  @media only screen and (min-width: 1000px) {
+  
+    .flex-container-action {
+      flex-wrap: nowrap;
+    }
+  }
+  
+  @media only screen and (min-width: 1250px) {
+    
+    .flex-container-action {
+      flex-wrap: nowrap;
+    }
+  
+    #list-container {
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px 20px 40px 40px;
+    }
+  
+    .left-container {
+      width: 50%;
+      margin-right: 10%;
+    }
+  }
